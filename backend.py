@@ -3,7 +3,7 @@ import openai
 
 class Chatbot:
     def __init__(self):
-        openai.api_key = "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"
+        openai.api_key = "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"
 
     def get_response(self, user_input):
         response = openai.Completion.create(
@@ -15,7 +15,3 @@ class Chatbot:
         return response
 
 
-if __name__ == "__main__":
-    chatbot = Chatbot()
-    response = chatbot.get_response("1")
-    print(response)
